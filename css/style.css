@@ -315,8 +315,9 @@ a {
   display: inline-block;
   vertical-align: top;
   background: url(../img/target.svg) no-repeat center center;
-  width: 36px;
-  height: 36px;
+  background-size: cover;
+  width: 35px;
+  height: 34px;
 }
 
 .tooltip {
@@ -381,16 +382,16 @@ a {
 
 .tooltip3 {
   position: absolute;
-  top: 193px;
-  left: 120px;
+  bottom: 0;
+  left: 32px;
   white-space: nowrap;
 }
 
 .tooltip3 span {
   position: relative;
-  padding: 0px 50px 3px 0;
-  top: -10px;
-  right: 207px;
+  padding-bottom: 3px;
+  bottom: 10px;
+  right: 81px;
   font-size: 1.375rem;
   line-height: 1.5rem;
   opacity: 0;
@@ -401,7 +402,7 @@ a {
   content: '';
   position: absolute;
   top: 100%;
-  left: 0px;
+  left: 0;
   width: 170px;
   border-bottom: 3px solid #fef45a;
 }
@@ -413,15 +414,16 @@ a {
 .tooltip4 {
   position: absolute;
   top: 100px;
-  left: 6px;
+  right: 100%;
+  margin-right: -43px;
   white-space: nowrap;
 }
 
 .tooltip4 span {
   position: relative;
-  padding: 0px 50px 3px 0;
+  padding-bottom: 3px;
   top: -10px;
-  right: 207px;
+  right: 29px;
   font-size: 1.375rem;
   line-height: 1.5rem;
   opacity: 0;
@@ -432,7 +434,7 @@ a {
   content: '';
   position: absolute;
   top: 100%;
-  left: 0px;
+  left: 0;
   width: 170px;
   border-bottom: 3px solid #fd6363;
 }
@@ -447,6 +449,13 @@ a {
     margin-top: 2.6875em;
   }
 }
+
+@media (max-width: 48rem) {
+  .img-holder .watermelon {
+    width: 179px;
+  }
+}
+
 
 /* Pricing */
 
