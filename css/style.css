@@ -343,8 +343,6 @@ a {
   border-bottom: 3px solid #d4fa7a;
 }
 
-
-
 .tooltip a:hover,
 .tooltip a:hover + span {
   opacity: 1;
@@ -445,7 +443,6 @@ a {
 .tooltip4:hover span{
   opacity: 1;
 }
-
 
 @media (max-width: 79rem) {
   .composition-of-watermelon {
