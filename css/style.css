@@ -18,10 +18,6 @@ body {
   font-family: Myriad Pro, Verdana, Arial, Helvetica, sans-serif;
 }
 
-h1, h2 {
-  /*letter-spacing: -0.036em;*/
-}
-
 h2 {
   font-size: 3.1rem;
   font-weight: 400;
@@ -33,7 +29,6 @@ p {
   font-size: 1.563rem;
   font-weight: 400;
   line-height: 35px;
-  /*letter-spacing: -0.014em;*/
   margin: 0.3em 0 2.6875em 0;
 }
 
@@ -134,7 +129,7 @@ a {
 }
 
 .main-nav a {
-  padding: 0 1em; /*21px/21px*/
+  padding: 0 1em;
   font-size: 1.313rem;
   font-weight: 600;
   transition: opacity 0.2s;
@@ -145,7 +140,7 @@ a {
 }
 
 .main-nav .buy-now {
-  padding: 0.3809em 0.6666em; /*8px/21px 14px/21px*/
+  padding: 0.3809em 0.6666em;
   border: 3px solid rgba(255, 255, 255, 1);
   transition: all 0.3s;
 }
@@ -318,6 +313,8 @@ a {
   background-size: cover;
   width: 35px;
   height: 34px;
+  opacity: .7;
+  transition: opacity .3s;
 }
 
 .tooltip {
@@ -346,7 +343,10 @@ a {
   border-bottom: 3px solid #d4fa7a;
 }
 
-.tooltip:hover span{
+
+
+.tooltip a:hover,
+.tooltip a:hover + span {
   opacity: 1;
 }
 
@@ -376,7 +376,8 @@ a {
   border-bottom: 3px solid #8cdbf2;
 }
 
-.tooltip2:hover span{
+.tooltip2 a:hover,
+.tooltip2 a:hover + span{
   opacity: 1;
 }
 
@@ -407,6 +408,7 @@ a {
   border-bottom: 3px solid #fef45a;
 }
 
+.tooltip3 a:hover,
 .tooltip3:hover span{
   opacity: 1;
 }
@@ -423,7 +425,7 @@ a {
   position: relative;
   padding-bottom: 3px;
   top: -10px;
-  right: 29px;
+  right: 30px;
   font-size: 1.375rem;
   line-height: 1.5rem;
   opacity: 0;
@@ -439,6 +441,7 @@ a {
   border-bottom: 3px solid #fd6363;
 }
 
+.tooltip4 a:hover,
 .tooltip4:hover span{
   opacity: 1;
 }
@@ -454,8 +457,76 @@ a {
   .img-holder .watermelon {
     width: 179px;
   }
-}
 
+  .opener {
+    width: 20px;
+    height: 19px;
+  }
+
+  .tooltip {
+    top: 46px;
+    left: 146px;
+  }
+
+  .tooltip2 {
+    top: 86px;
+    left: 130px;
+  }
+
+  .tooltip3 {
+    left: 10px;
+  }
+
+  .tooltip4 {
+    top: 64px;
+    margin-right: -30px;
+  }
+
+  .opener,
+  .tooltip span,
+  .tooltip2 span,
+  .tooltip3 span,
+  .tooltip4 span {
+    opacity: 1;
+    font-size: 1rem;
+  }
+
+  .tooltip span,
+  .tooltip2 span {
+    top: -11px;
+  }
+
+  .tooltip span {
+    padding: 0 0 0px 8px;
+  }
+
+  .tooltip2 span {
+    padding: 0 0 0px 24px;
+  }
+  
+  .tooltip3 span,
+  .tooltip4 span {
+    padding-bottom: 0;
+  }
+
+  .tooltip3 span {
+    bottom: 11px;
+    right: 35px;
+  }
+
+  .tooltip4 span {
+    top: -12px;
+    right: -3px;
+  }
+
+  .tooltip span:after,
+  .tooltip2 span:after,
+  .tooltip3 span:after,
+  .tooltip4 span:after {
+    width: 100px;
+    border-bottom-width: 2px;
+  }
+}
 
 /* Pricing */
 
