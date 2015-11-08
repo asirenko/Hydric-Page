@@ -33,7 +33,6 @@ p {
   font-size: 1.563rem;
   font-weight: 400;
   line-height: 35px;
-  /*letter-spacing: -0.014em;*/
   margin: 0.3em 0 2.6875em 0;
 }
 
@@ -317,7 +316,14 @@ a {
   background: url(../img/target.svg) no-repeat center center;
   width: 36px;
   height: 36px;
+  opacity: .7;
+  transition: opacity .2s;
 }
+
+.opener:hover {
+  opacity: 1;
+}
+
 
 .tooltip {
   position: absolute;
